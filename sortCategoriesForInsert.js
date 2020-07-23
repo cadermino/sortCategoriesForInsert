@@ -10,7 +10,5 @@ module.exports = function sortCategoriesForInsert (inputJson) {
     result.push.apply(result, children);
   });
 
-  let properJsonOutput = JSON.stringify(result);
-
-  return properJsonOutput
+  return JSON.stringify(result);
 }
